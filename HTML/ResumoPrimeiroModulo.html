@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Resumo HTML 1</title>
+    </head>
+    <body>
+        <h1 id="Inicio"><strong>Resumo do primeiro modulo de HTML</strong></h1>
+
+        <h3><ul>Tópicos do site</ul></h3>
+            <li><a href="#Base">Base HTML</a> </li>
+            <li><a href="#Tags">Tags</a></li>
+            <li><a href="#Listas">Listas</a></li>
+            <li><a href="#Links">Links</a></li>
+
+        <h2 id="Base">Estrutura base HTML</h2>
+        <p>O HTML existe desde 1991 e atualmente está na versão 5, que veio recheada de recursos e funcionalidades que trazem melhorias para o desenvolvimento web, 
+           sua responsabilidade principal é demarcar a estrutura de uma página da web. Essa estrutura do HTML é formada por um conjunto de elementos, ou seja, os hipertextos, 
+           que se conectam entre si formando a página. Os elementos HTML ou também chamados de tags HTML, são utilizados para informar ao navegador que tipo de estrutura é essa que 
+           está sendo construída, podendo ser títulos, parágrafos, imagens, links, entre outros.</p>
+
+        <p>O HTML é composto por pois pontos base, o <strong>head</strong> e o <strong>body</strong> sendo o head a parte superior do site como sua url nome do site e etc, ja o body 
+           é parte visual e interativa do site que será a base do mesmo.</p>
+
+        <p>Ao acessar uma página web através de um navegador, ele é capaz de interpretar o código HTML e renderizá-lo de forma compreensível para o usuário final, exibindo textos, 
+            botões etc. com as configurações definidas por meio das diversas tags que essa linguagem dispõe.</p>
+
+        <h2 id="Tags">Tags</h2>
+        <p>As tags são a base para o funcionamento do HTML pois são elas que definem todas as funções possiveis de serem executadas no mesmo.</p>
+
+        <p>As tags podem ser categorizadas inicialmente em dois tipos, em “nível de bloco” (block-level) e “em linha” (inline). Um elemento em nível de bloco ocupa toda a largura de 
+           seu elemento pai, que também chamamos de elemento container, criando assim um “bloco”. Já os elementos inline, geralmente usamos para demarcação de conteúdos de texto.</p>
+
+        <p>Existem diversas tags diferentes com funções diferentes, alguns exemplos são a tag < p > que inicia e finaliza uma linha de texto, ou as tags hn que são tags de titulo 
+           podendo ir do h1 ao h6 sendo 1 o maior e tecnicamente mais importante titulo e 6 o menor e menos importante.</p>
+
+        <h2 id="Listas">Listas</h2>
+        <p>Não são raros os casos em que queremos exibir uma listagem em nossas páginas. O HTML tem algumas tags definidas para que possamos fazer isso de maneira correta. 
+           A lista mais comum é a lista não-ordenada definida pela tag < ul > (unordered list).</p>
+
+            <ul>
+              <li>Primeiro item da lista</li>
+              <li>
+                Segundo item da lista:
+                <ul>
+                  <li>Primeiro item da lista aninhada</li>
+                  <li>Segundo item da lista aninhada</li>
+                </ul>
+              </li>
+              <li>Terceiro item da lista</li>
+            </ul>
+
+        <p>Note que, para cada item da lista não-ordenada, utilizamos uma marcação de item de lista <li> (list item). No exemplo acima, utilizamos uma estrutura composta na qual o 
+           segundo item da lista contém uma nova lista. A mesma tag de item de lista <li> é utilizada quando demarcamos uma lista ordenada.</p>
+            
+            <ol>
+              <li>Primeiro item da lista</li>
+              <li>Segundo item da lista</li>
+              <li>Terceiro item da lista</li>
+              <li>Quarto item da lista</li>
+              <li>Quinto item da lista</li>
+            </ol>
+
+        <p>As listas ordenadas (< ol > - ordered list) também podem ter sua estrutura composta por outras listas ordenadas como no exemplo que temos para as listas não-ordenadas. 
+           Também é possível ter listas ordenadas aninhadas em um item de uma lista não-ordenada e vice-versa.</p>
+
+        <h2 id="Links">Links</h2>
+        <p>Quando precisamos indicar que um trecho de texto se refere a um outro conteúdo, seja ele no mesmo documento ou em outro endereço (por exemplo uma página na web), utilizamos a tag de âncora <a>.
+
+            Existem três diferentes usos para as âncoras. Um deles é a definição de links:
+            
+            <p>
+              Visite o site <a href="https://www.youtube.com">Youtube</a> (Link aberto na mesma pagina)
+            </p>
+
+        <p>Note que a âncora está demarcando apenas a palavra <strong>Youtube</strong> de todo o conteúdo do parágrafo exemplificado. Isso significa que, ao clicarmos com
+        o cursor do mouse na palavra <strong>Youtube</strong>, o navegador redirecionará o usuário para o site do Youtube, indicado no atributo href.</p>
+            
+        <p>Podemos adicionar o atributo target="" para especificar onde que essa página irá carregar. Por padrão a página irá abrir na mesma aba da página que tem o link, mas se 
+        quisermos que a página abra em outra aba podemos colocar o valor _blank dentro desse atributo:</p>
+            
+            <p>
+                Visite o site <a href="https://www.youtube.com" target="_blank">Youtube</a> (Link aberto em uma nova aba)
+            </p>
+
+            <p><a href="#Inicio">Clique aqui para voltar ao Inicio do Site</a></p>
+    </body>
+</html>

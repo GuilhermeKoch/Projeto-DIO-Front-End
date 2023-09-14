@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            -webkit-box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.57);
+            -moz-box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.57);
+            box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.57);
+            
+        }
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+        table tfoot td{
+            background-color: lightgray;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: #E9E9E9;
+        }
+        table tbody tr:hover td{
+            background-color: #E9E9E9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table style="font-family: Arial, Helvetica, sans-serif;" summary="Tabela de Pessoas da casa" width="max-content" cellspacing="0" cellpadding="25" align="center">
+        <thead>
+            <tr>
+                <th title="Serviços">Serviços</th>
+                <th title="Segunda a Sexta">Segunda a Sexta</th>
+                <th title="Sabados">Sábados</th>
+                <th title="Feriados">Feriados</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr align="center">
+                <td>Clinica Geral</td>
+                <td>08h - 19h</td>
+                <td>08h - 14h</td>
+                <td>08h - 14h</td>
+            </tr>
+            <tr align="center">
+                <td>Psicologia</td>
+                <td>08h - 19h</td>
+                <td>08 - 14h</td>
+                <td>08h - 14h</td>
+            </tr>
+            <tr align="center">
+                <td>Oftalmologia</td>
+                <td>08h - 19h</td>
+                <td>08h - 14h</td>
+                <td>-</td>
+            </tr>
+            <tr align="center">
+                <td>Pediatria</td>
+                <td>08h - 19h</td>
+                <td>08h - 14h</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+        </tfoot>
+    </table>
+</body>
+</html>

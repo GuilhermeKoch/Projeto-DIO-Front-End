@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha HTML - Dio</title>
+    <style>
+        .row{
+            margin: 5px;
+        }
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: verdana;">Formulário de cadastro</h1>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label>Nome</label><input type="text" />
+            <label>Idade</label><input type="number" min="0" max="100" />
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+        <div class="row">
+            <label>Cep</label><input type="number" />
+            <label>Número</label><input type="number" />
+        </div>
+        <div class="row">
+            <label>Bairro</label><input type="text" />
+        </div>
+        <div class="row">
+            <label>Cidade/UF</label><input type="text" />
+        </div>    
+    </fieldset>
+
+    <fieldset>
+        <legend>Informações de Contato</legend>
+        <div class="row">
+            <label>E-mail</label><input type="email" />
+            <label>Celular</label><input type="number" />
+        </div>
+    </fieldset>
+
+        <div class="row">
+            <button>Enviar</button>
+        </div>
+</body>
+</html>
